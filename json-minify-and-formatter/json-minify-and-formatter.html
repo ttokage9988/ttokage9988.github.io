@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>23日の金曜日（JSON整形・圧縮ツール）</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="header.png" width="600px" height="100px">
+        </header>
+        <h1>23日の金曜日（JSON整形・圧縮ツール）</h1>
+        <form>
+            <p>JSONテキスト入力<br>
+                <textarea type="text" name="" maxlength="10000000" cols="60" rows="20" id="ta-input-text"
+                    value=""></textarea>
+            </p>
+            <p>
+                <input class="btn1" type="button" value="1行圧縮" id="btn-oneline" onclick="oneline()">
+                <input class="btn1" type="button" value="整形" id="btn-format" onclick="format()">
+                <input class="btn1" type="button" value="1行圧縮（エスケープ処理）" id="btn-oneline-escape"
+                    onclick="onelineEscape()">
+                ｜
+                <input class="btn1" type="button" value="コピー" id="btn-copy-ta-input-text" onclick="copyInputTextArea()">
+            </p>
+        </form>
+        <hr>
+        <p>
+            ＊整形のインデントはスペース4文字です。<br>
+            ＊入力の文字数制限は1000万文字にしています。
+        </p>
+        <div class="push"></div>
+        <footer>
+            <p><small>©2022 tasky</small></p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
